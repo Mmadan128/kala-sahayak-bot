@@ -31,10 +31,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-elegant">Shop</a>
-            <a href="#" className="text-foreground hover:text-primary transition-elegant">Our Mission</a>
-            <a href="#" className="text-foreground hover:text-primary transition-elegant">Account</a>
-            <a href="#studio" className="text-foreground hover:text-primary transition-elegant">Agentic AI Studio</a>
+            <a href="/shop" className="text-foreground hover:text-primary transition-elegant">Shop</a>
+            <a href="/mission" className="text-foreground hover:text-primary transition-elegant">Our Mission</a>
+            <a href="/account" className="text-foreground hover:text-primary transition-elegant">Account</a>
+            <a href="/ai-studio" className="text-foreground hover:text-primary transition-elegant">Agentic AI Studio</a>
           </nav>
 
           {/* Action Buttons */}
@@ -61,8 +61,8 @@ const Header = () => {
             </Button>
 
             {/* Login Button */}
-            <Button variant="premium" className="hidden sm:flex">
-              Get Started
+            <Button variant="premium" className="hidden sm:flex" asChild>
+              <a href="/ai-studio">Get Started</a>
             </Button>
 
             {/* Mobile Menu */}
@@ -81,12 +81,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-border/50 py-4">
             <nav className="flex flex-col space-y-3">
-              <a href="#" className="text-foreground hover:text-primary transition-elegant py-2">Shop</a>
-              <a href="#" className="text-foreground hover:text-primary transition-elegant py-2">Our Mission</a>
-              <a href="#" className="text-foreground hover:text-primary transition-elegant py-2">Account</a>
-              <a href="#studio" className="text-foreground hover:text-primary transition-elegant py-2">Agentic AI Studio</a>
-              <Button variant="premium" className="mt-4 w-full">
-                Get Started
+              <a href="/shop" className="text-foreground hover:text-primary transition-elegant py-2">Shop</a>
+              <a href="/mission" className="text-foreground hover:text-primary transition-elegant py-2">Our Mission</a>
+              <a href="/account" className="text-foreground hover:text-primary transition-elegant py-2">Account</a>
+              <a href="/ai-studio" className="text-foreground hover:text-primary transition-elegant py-2">Agentic AI Studio</a>
+              <Button variant="premium" className="mt-4 w-full" asChild>
+                <a href="/ai-studio">Get Started</a>
               </Button>
             </nav>
           </div>

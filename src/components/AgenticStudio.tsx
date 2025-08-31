@@ -237,9 +237,11 @@ const AgenticStudio = () => {
                       <div className="text-xs text-muted-foreground">Success Rate</div>
                     </div>
                   </div>
-                  <Button variant="premium" className="w-full">
-                    Try AI Studio
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button variant="premium" className="w-full" asChild>
+                    <a href="/ai-studio">
+                      Try AI Studio
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
                   </Button>
                 </div>
               </CardContent>
